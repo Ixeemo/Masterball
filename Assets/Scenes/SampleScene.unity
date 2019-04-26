@@ -1189,6 +1189,7 @@ MonoBehaviour:
   tempParent: {fileID: 245415792}
   Autobot: {fileID: 245415792}
   isSpace: 0
+  inRange: 0
 --- !u!54 &1667676134
 Rigidbody:
   m_ObjectHideFlags: 0
