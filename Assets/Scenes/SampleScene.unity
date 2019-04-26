@@ -169,7 +169,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 448646, guid: 1a9dca02feba5a740a65aa80ccaa457e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 26.63
+      value: 15.11
       objectReference: {fileID: 0}
     - target: {fileID: 448646, guid: 1a9dca02feba5a740a65aa80ccaa457e, type: 3}
       propertyPath: m_LocalRotation.x
@@ -201,11 +201,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 448646, guid: 1a9dca02feba5a740a65aa80ccaa457e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -15.5
+      value: -6.42
       objectReference: {fileID: 0}
     - target: {fileID: 448646, guid: 1a9dca02feba5a740a65aa80ccaa457e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.7
+      value: 1.19
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a9dca02feba5a740a65aa80ccaa457e, type: 3}
@@ -1167,7 +1167,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1667676128}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.67, z: 5.14}
+  m_LocalPosition: {x: 0, y: 0.67, z: -8.66}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1185,9 +1185,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94ed5aa93aeaab540a5c286a744902c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 1667676128}
+  item: {fileID: 1667676134}
   tempParent: {fileID: 245415792}
   Autobot: {fileID: 245415792}
+  moveSpeed: 50
   isSpace: 0
   inRange: 0
 --- !u!54 &1667676134
