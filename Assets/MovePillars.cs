@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class MovePillars : MonoBehaviour
 {
@@ -34,22 +35,29 @@ public class MovePillars : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    { 
-        /*
-        if (bramka1.transform.position.x == 29.4f)
+    {
+        
+        //
+        if (bramka1.transform.position.x >= 22.37f)
+        {
+            right = false;
+            //bramka1.transform.position -= Vector3.left * Time.deltaTime * speed;
+        }
+        else if (bramka1.transform.position.x <= -12.87f)
         {
             right = true;
+        }
+        
+        if (right == true)
+        {
             bramka1.transform.position -= Vector3.left * Time.deltaTime * speed;
         }
-        else if (bramka1.transform.position.x == -9.7f)
-        {
-            left = true;
-        }
-        */
 
-       
+        if (right == false)
+        {
             bramka1.transform.position += Vector3.left * Time.deltaTime * speed;
-        
+        }
+
     }
 
 }
