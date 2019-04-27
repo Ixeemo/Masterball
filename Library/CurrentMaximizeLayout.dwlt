@@ -20,12 +20,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
+<<<<<<< HEAD
     width: 1536
     height: 731
   m_MinSize: {x: 917, y: 398}
   m_MaxSize: {x: 22012, y: 14048}
   vertical: 0
   controlID: 14680
+=======
+    width: 1920
+    height: 947
+  m_MinSize: {x: 915, y: 398}
+  m_MaxSize: {x: 22010, y: 14048}
+  vertical: 0
+  controlID: 1993
+>>>>>>> origin/Bramki
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -47,10 +56,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 438
+    x: 635
     y: 22
-    width: 819
-    height: 707
+    width: 845
+    height: 923
   m_PersistentViewDataDictionary: {fileID: 0}
   m_MaximizeOnPlay: 1
   m_Gizmos: 0
@@ -62,10 +71,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -327.6
-    m_HBaseRangeMax: 327.6
-    m_VBaseRangeMin: -276
-    m_VBaseRangeMax: 276
+    m_HBaseRangeMin: -422.5
+    m_HBaseRangeMax: 422.5
+    m_VBaseRangeMin: -453
+    m_VBaseRangeMax: 453
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -83,25 +92,25 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
-      width: 819
-      height: 690
+      width: 845
+      height: 906
     m_Scale: {x: 1.25, y: 1.25}
-    m_Translation: {x: 409.5, y: 345}
+    m_Translation: {x: 422.5, y: 453}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -327.6
-      y: -276
-      width: 655.2
-      height: 552
+      x: -338
+      y: -362.4
+      width: 676
+      height: 724.8
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
-  m_LastWindowPixelSize: {x: 1023.75, y: 883.75}
+  m_LastWindowPixelSize: {x: 845, y: 923}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -125,12 +134,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 436
     height: 731
   m_MinSize: {x: 436, y: 398}
   m_MaxSize: {x: 14006, y: 14048}
   vertical: 1
   controlID: 14626
+=======
+    width: 633
+    height: 947
+  m_MinSize: {x: 436, y: 398}
+  m_MaxSize: {x: 14006, y: 14048}
+  vertical: 1
+  controlID: 2080
+>>>>>>> origin/Bramki
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -150,12 +168,16 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 436
-    height: 487
+    width: 633
+    height: 631
   m_MinSize: {x: 436, y: 274}
   m_MaxSize: {x: 14006, y: 10024}
   vertical: 0
+<<<<<<< HEAD
   controlID: 14627
+=======
+  controlID: 2081
+>>>>>>> origin/Bramki
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -173,10 +195,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 232
-    height: 487
-  m_MinSize: {x: 232, y: 274}
-  m_MaxSize: {x: 10002, y: 10024}
+    width: 336
+    height: 631
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -204,9 +226,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 73.6
-    width: 230
-    height: 467
+    y: 73
+    width: 334
+    height: 611
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -224,14 +246,18 @@ MonoBehaviour:
   m_StartGridSize: 64
   m_LastFolders: []
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: D:\Pulpit\Masterball
+  m_LastProjectPath: C:\Users\Magda\Documents\GitHub\Masterball
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: b6280000
     m_LastClickedID: 10422
+<<<<<<< HEAD
     m_ExpandedIDs: ffffffff000000001a26000090260000bc2600002e270000f82700002c2900002e2900003029000032290000342900003629000038290000
+=======
+    m_ExpandedIDs: ffffffff0000000070090000e6090000120a0000840a00006429000066290000682900006a2900006c2900006e2900007029000072290000
+>>>>>>> origin/Bramki
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -257,9 +283,15 @@ MonoBehaviour:
       m_ResourceFile: 
   m_AssetTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: c4fbffff
     m_LastClickedID: 0
     m_ExpandedIDs: ffffffff000000001a26000090260000bc2600002e270000f82700002c2900002e2900003029000032290000342900003629000038290000
+=======
+    m_SelectedIDs: 2c0c0000
+    m_LastClickedID: 0
+    m_ExpandedIDs: ffffffff0000000070090000e6090000120a0000840a00006429000066290000682900006a2900006c2900006e2900007029000072290000
+>>>>>>> origin/Bramki
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -284,8 +316,13 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
+<<<<<<< HEAD
     m_SelectedInstanceIDs: c4fbffff
     m_LastClickedInstanceID: -1084
+=======
+    m_SelectedInstanceIDs: 2c0c0000
+    m_LastClickedInstanceID: 3116
+>>>>>>> origin/Bramki
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
@@ -329,12 +366,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 232
+    x: 336
     y: 0
-    width: 204
-    height: 487
-  m_MinSize: {x: 204, y: 224}
-  m_MaxSize: {x: 4004, y: 4024}
+    width: 297
+    height: 631
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 8}
   m_Panes:
   - {fileID: 8}
@@ -361,17 +398,21 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 232
-    y: 73.6
-    width: 200
-    height: 467
+    x: 336
+    y: 73
+    width: 293
+    height: 611
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
+<<<<<<< HEAD
       m_ExpandedIDs: cafbffffccfbffff86280000
+=======
+      m_ExpandedIDs: d4fbffff2c0c0000
+>>>>>>> origin/Bramki
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -411,11 +452,19 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 487
     width: 436
     height: 244
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
+=======
+    y: 631
+    width: 633
+    height: 316
+  m_MinSize: {x: 102, y: 124}
+  m_MaxSize: {x: 4002, y: 4024}
+>>>>>>> origin/Bramki
   m_ActualView: {fileID: 10}
   m_Panes:
   - {fileID: 10}
@@ -443,9 +492,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 560
-    width: 434
-    height: 224
+    y: 704
+    width: 631
+    height: 296
   m_PersistentViewDataDictionary: {fileID: 0}
 --- !u!114 &11
 MonoBehaviour:
@@ -462,10 +511,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 436
+    x: 633
     y: 0
-    width: 823
-    height: 731
+    width: 849
+    height: 947
   m_MinSize: {x: 204, y: 224}
   m_MaxSize: {x: 4004, y: 4024}
   m_ActualView: {fileID: 2}
@@ -495,10 +544,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 436
-    y: 73.6
-    width: 819
-    height: 711
+    x: 633
+    y: 73
+    width: 845
+    height: 927
   m_PersistentViewDataDictionary: {fileID: 0}
   m_WindowGUID: b7d7e28f7970f0b4db6c44b689a51062
   m_SceneLighting: 1
@@ -506,9 +555,15 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: 18.238539, y: 10.677085, z: 5.2643147}
     speed: 2
     m_Value: {x: 18.238539, y: 10.677085, z: 5.2643147}
+=======
+    m_Target: {x: 6.1075945, y: 0.14772797, z: 9.707881}
+    speed: 2
+    m_Value: {x: 6.1075945, y: 0.14772797, z: 9.707881}
+>>>>>>> origin/Bramki
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -536,6 +591,7 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
+<<<<<<< HEAD
     m_Target: {x: -0.22329664, y: 0.6373345, z: -0.200515, w: -0.7097444}
     speed: 2
     m_Value: {x: -0.22329664, y: 0.6373345, z: -0.200515, w: -0.7097444}
@@ -543,6 +599,15 @@ MonoBehaviour:
     m_Target: 22
     speed: 2
     m_Value: 22
+=======
+    m_Target: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+    speed: 2
+    m_Value: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_Size:
+    m_Target: 60.453323
+    speed: 2
+    m_Value: 60.453323
+>>>>>>> origin/Bramki
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -595,12 +660,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1259
+    x: 1482
     y: 0
-    width: 277
-    height: 731
-  m_MinSize: {x: 277, y: 74}
-  m_MaxSize: {x: 4002, y: 4024}
+    width: 438
+    height: 947
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -627,10 +692,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1259.2001
-    y: 73.6
-    width: 275
-    height: 711
+    x: 1482
+    y: 73
+    width: 436
+    height: 927
   m_PersistentViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 

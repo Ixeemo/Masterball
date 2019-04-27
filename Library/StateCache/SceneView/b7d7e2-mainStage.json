@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":false,"showMaterialUpdate":false,"showSkybox":false,"showFlares":false,"showImageEffects":false,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":18.23853874206543,"y":10.677084922790528,"z":5.264314651489258},"rotation":{"x":-0.2232966423034668,"y":0.6373345255851746,"z":-0.2005150020122528,"w":-0.709744393825531},"size":22.0,"orthographic":false}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":false,"showMaterialUpdate":false,"showSkybox":false,"showFlares":false,"showImageEffects":false,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":5.390711307525635,"y":0.14773178100585938,"z":2.7638795375823976},"rotation":{"x":0.7071068286895752,"y":0.0,"z":0.0,"w":0.7071068286895752},"size":69.50870513916016,"orthographic":false}
+>>>>>>> origin/Bramki
