@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\ball_controller.cs" />
     <Compile Include="Assets\CarCamera\CarCam.cs" />
+    <Compile Include="Assets\MainMenu.cs" />
     <Compile Include="Assets\movement.cs" />
     <Compile Include="Assets\movement1.cs" />
     <Compile Include="Assets\MoveObject.cs" />
