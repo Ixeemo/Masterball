@@ -20,6 +20,10 @@ public class MoveObject : MonoBehaviour
     public int counter;
     public int counter1;
     public Text countText;
+    public AudioClip GoalClip;
+    public AudioSource GoalSource;
+    public AudioClip ShotClip;
+    public AudioSource ShotSource;
     
 
     // Start is called before the first frame update
@@ -28,32 +32,35 @@ public class MoveObject : MonoBehaviour
     {
         if (other.gameObject.tag == "bramka")
         {
-            counter ++;
-            if (counter >= 10)
-            {
-                counter = 0;
-            }
-            PlayerPrefs.SetInt("High Score", counter);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-           
-            //Destroy(other);
-            SetCountText();
+            
+                counter ++;
+                if (counter >= 10)
+                {
+                    counter = 0;
+                }
+                PlayerPrefs.SetInt("High Score", counter);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            
+                //Destroy(other);
+                SetCountText();
+                GoalSource.Play();
 
         }
 
         if (other.gameObject.tag == "bramka1")
-        {
-            counter1 ++;
-            if (counter1 >= 10)
-            {
-                counter1 = 0;
-            }
-            PlayerPrefs.SetInt("High Score 1", counter1);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-           
-            //Destroy(other);
-            SetCountText();
-
+        {   
+            
+                counter1 ++;
+                if (counter1 >= 10)
+                {
+                    counter1 = 0;
+                }
+                PlayerPrefs.SetInt("High Score 1", counter1);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            
+                //Destroy(other);
+                SetCountText();
+                GoalSource.Play();
         }
     }
 
@@ -74,6 +81,7 @@ public class MoveObject : MonoBehaviour
             item.GetComponent<Rigidbody>().useGravity = true;
             item.GetComponent<Rigidbody>().isKinematic = false;
             item.AddForce(0, 0, -moveSpeed, ForceMode.Impulse);
+            ShotSource.Play();
             
             
         }
@@ -87,6 +95,7 @@ public class MoveObject : MonoBehaviour
             item.GetComponent<Rigidbody>().useGravity = true;
             item.GetComponent<Rigidbody>().isKinematic = false;
             item.AddForce(0, 0, moveSpeed, ForceMode.Impulse);
+            ShotSource.Play();
         }    
     }
     
@@ -104,12 +113,20 @@ public class MoveObject : MonoBehaviour
         counter = PlayerPrefs.GetInt("High Score");
         counter1 = PlayerPrefs.GetInt("High Score 1");
         SetCountText();
+        GoalSource.clip = GoalClip;
+        ShotSource.clip = ShotClip;
         
+    }
+
+    void Awake(){
+        DontDestroyOnLoad(GoalClip);
+        DontDestroyOnLoad(GoalSource);
     }
 
     // Update is called once per frame
     void Update()
     {   
+        transform.Rotate(new Vector3(0f, Time.deltaTime * 60, 0f), Space.World);
         /*
         if (Input.GetKeyDown("space") && isSpace == true)
         {   
