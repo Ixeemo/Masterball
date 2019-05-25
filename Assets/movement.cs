@@ -5,7 +5,6 @@ using UnityEngine;
 public class movement : MonoBehaviour {
 
  public float moveSpeed;
- public GameObject _name;
  public GameObject autoBot;
  
 

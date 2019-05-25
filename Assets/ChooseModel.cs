@@ -43,7 +43,6 @@ public class ChooseModel : MonoBehaviour
 
         modelsList[index].SetActive(true);
 
-        autobot._name = modelsList[index];
     }
 
     public void PreviousPlayer1()

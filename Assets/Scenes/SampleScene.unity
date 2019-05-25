@@ -483,7 +483,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0
-  _name: {fileID: 0}
+  autoBot: {fileID: 0}
 --- !u!1 &245415792
 GameObject:
   m_ObjectHideFlags: 0
@@ -607,7 +607,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
-  _name: {fileID: 245415792}
+  autoBot: {fileID: 245415792}
 --- !u!1 &281295152
 GameObject:
   m_ObjectHideFlags: 0
@@ -1331,7 +1331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
-  _name: {fileID: 910713057}
+  autoBot: {fileID: 910713057}
 --- !u!1 &1027929074
 GameObject:
   m_ObjectHideFlags: 0
