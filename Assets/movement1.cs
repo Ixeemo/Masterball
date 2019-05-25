@@ -5,12 +5,12 @@ using UnityEngine;
 public class movement1 : MonoBehaviour {
 
  public float moveSpeed;
- 
- 
- 
+    public GameObject autoBot;
 
- // Use this for initialization
- void Start () 
+
+
+    // Use this for initialization
+    void Start () 
  {
     
  }

@@ -5,11 +5,17 @@ using UnityEngine;
 public class movement : MonoBehaviour {
 
  public float moveSpeed;
- 
+ public GameObject _name;
+ public GameObject autoBot;
  
 
- // Use this for initialization
- void Start () 
+/*public void SetObject(GameObject ship)
+{
+    autoBot = ship;
+}*/
+
+    // Use this for initialization
+    void Start () 
  {
       
  }
@@ -18,7 +24,7 @@ public class movement : MonoBehaviour {
  void FixedUpdate () 
  {  
     //rigidbody.isKinematic = false;
-    transform.Translate(moveSpeed*Input.GetAxis("Vertical")*Time.deltaTime,-moveSpeed*Input.GetAxis("Horizontal")*Time.deltaTime, 0f); 
+    autoBot.transform.Translate(moveSpeed*Input.GetAxis("Vertical")*Time.deltaTime,-moveSpeed*Input.GetAxis("Horizontal")*Time.deltaTime, 0f); 
  }
 
 void OnCollisionEnter(Collision collision) 

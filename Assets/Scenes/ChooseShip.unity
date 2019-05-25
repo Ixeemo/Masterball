@@ -1015,6 +1015,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32741fcb9bce144e92d47c2ba585170, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 0
+  index2: 0
 --- !u!4 &781356891
 Transform:
   m_ObjectHideFlags: 0
@@ -1113,7 +1115,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 781356890}
-        m_MethodName: PreviousPlayer1
+        m_MethodName: PreviousPlayer2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1426,6 +1428,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32741fcb9bce144e92d47c2ba585170, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 0
+  index2: 0
 --- !u!4 &1053883094
 Transform:
   m_ObjectHideFlags: 0
@@ -1524,7 +1528,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 781356890}
-        m_MethodName: NextPlayer1
+        m_MethodName: NextPlayer2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
