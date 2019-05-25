@@ -70,6 +70,8 @@
     <Compile Include="Assets\MoveObject.cs" />
     <Compile Include="Assets\MovePillars.cs" />
     <Compile Include="Assets\Rotator.cs" />
+    <Compile Include="Assets\SpaceShuttle\Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\SpaceShuttle\Assets\Scripts\ChassisController.cs" />
     <Compile Include="Assets\StarfieldMaterials\Scripts\Move.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
