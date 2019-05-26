@@ -8,10 +8,12 @@ public class ChooseModel : MonoBehaviour
 {
     private GameObject[] modelsList;
     private int index;
-    private movement autobot = new movement();
 
-    private void Start()
+
+    void Start()
     {
+        //PlayerPrefs.DeleteKey("CharacterSelected");
+        //PlayerPrefs.SetInt("CharacterSelected", index);
         index = PlayerPrefs.GetInt("CharacterSelected");
         modelsList = new GameObject[transform.childCount];
 
@@ -20,28 +22,21 @@ public class ChooseModel : MonoBehaviour
 
         foreach (GameObject go in modelsList)
             go.SetActive(false);
-
-        if (Enumerable.Range(1, modelsList.Length).Contains(index))
-        {
-            
-        }
-        else
-        {
-            index = 0;
-        }
-
-            if (modelsList[index])
+       
+        if (modelsList[index])
             modelsList[index].SetActive(true);
+
     }
 
     public void NextPlayer1()
     {
         modelsList[index].SetActive(false);
         index++;
-        if (index == modelsList.Length) //czy tu ma być -1 czy nie?
+        if (index == modelsList.Length)
             index = 0;
 
         modelsList[index].SetActive(true);
+        Debug.Log("next:" + index);
 
     }
 
@@ -53,14 +48,24 @@ public class ChooseModel : MonoBehaviour
             index = modelsList.Length - 1;
 
         modelsList[index].SetActive(true);
-                
-    }
+        Debug.Log("previous:" + index);
 
-    
+
+    }
 
     public void Back()
     {
         PlayerPrefs.SetInt("CharacterSelected", index);
+        PlayerPrefs.Save();
         SceneManager.LoadScene(0);
+    }
+
+    public void Play()
+    {
+        PlayerPrefs.SetInt("CharacterSelected", index);
+        PlayerPrefs.Save();
+        SceneManager.LoadScene(1);
+        Debug.Log("play:" + index);
+
     }
 }

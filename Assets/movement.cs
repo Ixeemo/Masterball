@@ -8,11 +8,6 @@ public class movement : MonoBehaviour {
  public GameObject autoBot;
  
 
-/*public void SetObject(GameObject ship)
-{
-    autoBot = ship;
-}*/
-
     // Use this for initialization
     void Start () 
  {
@@ -23,7 +18,7 @@ public class movement : MonoBehaviour {
  void FixedUpdate () 
  {  
     //rigidbody.isKinematic = false;
-    autoBot.transform.Translate(moveSpeed*Input.GetAxis("Vertical")*Time.deltaTime,-moveSpeed*Input.GetAxis("Horizontal")*Time.deltaTime, 0f); 
+    autoBot.transform.Translate(moveSpeed*Input.GetAxis("Vertical")*Time.deltaTime, 0f, -moveSpeed * Input.GetAxis("Horizontal") * Time.deltaTime); 
  }
 
 void OnCollisionEnter(Collision collision) 

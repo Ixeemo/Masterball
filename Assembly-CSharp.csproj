@@ -63,6 +63,7 @@
     <Compile Include="Assets\ball_controller.cs" />
     <Compile Include="Assets\CarCamera\CarCam.cs" />
     <Compile Include="Assets\ChooseModel.cs" />
+    <Compile Include="Assets\ChooseModel2.cs" />
     <Compile Include="Assets\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
     <Compile Include="Assets\EffectExamples\Shared\Scripts\ExtinguishableFire.cs" />
     <Compile Include="Assets\EffectExamples\Shared\Scripts\GunAim.cs" />
@@ -73,6 +74,8 @@
     <Compile Include="Assets\EffectExamples\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\ItemSelection.cs" />
     <Compile Include="Assets\MainMenu.cs" />
+    <Compile Include="Assets\MoveCamera.cs" />
+    <Compile Include="Assets\MoveCamera2.cs" />
     <Compile Include="Assets\movement.cs" />
     <Compile Include="Assets\movement1.cs" />
     <Compile Include="Assets\MoveObject.cs" />
