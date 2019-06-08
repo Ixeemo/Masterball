@@ -20,6 +20,8 @@ public class MoveObject : MonoBehaviour
     public int counter;
     public int counter1;
     public Text countText;
+    public Text winner;
+    public GameObject gameOver;
     public AudioClip GoalClip;
     public AudioSource GoalSource;
     public AudioClip ShotClip;
@@ -34,12 +36,18 @@ public class MoveObject : MonoBehaviour
         {
             
                 counter ++;
-                if (counter >= 10)
+                if (counter >= 5)
                 {
+                    GameOver();
                     counter = 0;
+                    PlayerPrefs.SetInt("High Score", counter);
                 }
-                PlayerPrefs.SetInt("High Score", counter);
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                else
+                {
+                    PlayerPrefs.SetInt("High Score", counter);
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                }
+               
             
                 //Destroy(other);
                 SetCountText();
@@ -51,12 +59,18 @@ public class MoveObject : MonoBehaviour
         {   
             
                 counter1 ++;
-                if (counter1 >= 10)
+                if (counter1 >= 5)
                 {
+                    GameOver();
                     counter1 = 0;
+                    PlayerPrefs.SetInt("High Score 1", counter1);
                 }
-                PlayerPrefs.SetInt("High Score 1", counter1);
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                else
+                {
+                    PlayerPrefs.SetInt("High Score 1", counter1);
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                }
+                
             
                 //Destroy(other);
                 SetCountText();
@@ -64,11 +78,36 @@ public class MoveObject : MonoBehaviour
         }
     }
 
+    void GameOver()
+    {
+        gameOver.SetActive(true);
+        if (counter > counter1)
+        {
+            winner.text = "Player 1";
+        }
+        else
+        {
+            winner.text = "Player 2";
+        }
+                
+    }
+
     void SetCountText()
     {
         countText.text = "Wynik " + PlayerPrefs.GetInt("High Score").ToString() + ":" + PlayerPrefs.GetInt("High Score 1").ToString();
     }
-    
+
+    public void Menu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
+
+
     public void Shoot()
     {
 
@@ -115,6 +154,7 @@ public class MoveObject : MonoBehaviour
         SetCountText();
         GoalSource.clip = GoalClip;
         ShotSource.clip = ShotClip;
+        gameOver.SetActive(false);
         
     }
 
