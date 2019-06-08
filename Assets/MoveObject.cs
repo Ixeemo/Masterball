@@ -38,10 +38,11 @@ public class MoveObject : MonoBehaviour
                 counter ++;
                 if (counter >= 5)
                 {
+                    
+                    //counter = 0;
+                    //PlayerPrefs.SetInt("High Score", counter);
                     GameOver();
-                    counter = 0;
-                    PlayerPrefs.SetInt("High Score", counter);
-                }
+            }
                 else
                 {
                     PlayerPrefs.SetInt("High Score", counter);
@@ -61,10 +62,10 @@ public class MoveObject : MonoBehaviour
                 counter1 ++;
                 if (counter1 >= 5)
                 {
+                    //counter1 = 0;
+                    //PlayerPrefs.SetInt("High Score 1", counter1); 
                     GameOver();
-                    counter1 = 0;
-                    PlayerPrefs.SetInt("High Score 1", counter1);
-                }
+            }
                 else
                 {
                     PlayerPrefs.SetInt("High Score 1", counter1);
@@ -97,17 +98,7 @@ public class MoveObject : MonoBehaviour
         countText.text = "Wynik " + PlayerPrefs.GetInt("High Score").ToString() + ":" + PlayerPrefs.GetInt("High Score 1").ToString();
     }
 
-    public void Menu()
-    {
-        SceneManager.LoadScene(0);
-    }
-
-    public void Quit()
-    {
-        Application.Quit();
-    }
-
-
+    
     public void Shoot()
     {
 
