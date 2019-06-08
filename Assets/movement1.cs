@@ -22,7 +22,7 @@ public class movement1 : MonoBehaviour {
      //Transform.lookat
     //rigidbody.isKinematic = false;
     
-        transform.Translate(-moveSpeed*Input.GetAxis("Vertical1")*Time.deltaTime, 0f, moveSpeed * Input.GetAxis("Horizontal1") * Time.deltaTime); 
+        transform.Translate(moveSpeed*Input.GetAxis("Vertical1")*Time.deltaTime, 0f, -moveSpeed * Input.GetAxis("Horizontal1") * Time.deltaTime); 
     
  }
 

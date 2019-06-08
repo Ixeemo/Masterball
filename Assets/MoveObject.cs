@@ -150,7 +150,7 @@ public class MoveObject : MonoBehaviour
             
         }
 
-        if (Math.Abs(item.transform.position.x - Autobot.transform.position.x) <=  1.55f && Math.Abs(item.transform.position.z - Autobot.transform.position.z) <= 1.55f)
+        if (Math.Abs(item.transform.position.x - Autobot.transform.position.x) <=  1.6f && Math.Abs(item.transform.position.z - Autobot.transform.position.z) <= 3.0f)
         {
             inRange = true;
         }
@@ -162,7 +162,8 @@ public class MoveObject : MonoBehaviour
 
             item.GetComponent<Rigidbody>().useGravity = false;
             item.GetComponent<Rigidbody>().isKinematic = true;
-            item.transform.position = new Vector3(Autobot.transform.position.x, Autobot.transform.position.y + 0.1f, Autobot.transform.position.z - 1.25f);
+            item.transform.position = new Vector3(Autobot.transform.position.x, Autobot.transform.position.y + 0.1f, Autobot.transform.position.z - 2.7f);
+            isSpace = false;
 
             Shoot();           
             //item.transform.parent = tempParent.transform;
@@ -175,7 +176,7 @@ public class MoveObject : MonoBehaviour
             
         }
 
-        if (Math.Abs(item.transform.position.x - Autobot1.transform.position.x) <=  1.55f && Math.Abs(item.transform.position.z - Autobot1.transform.position.z) <= 1.55f)
+        if (Math.Abs(item.transform.position.x - Autobot1.transform.position.x) <=  1.6f && Math.Abs(item.transform.position.z - Autobot1.transform.position.z) <= 3.0f)
         {
             inRange1 = true;
         }
@@ -187,7 +188,8 @@ public class MoveObject : MonoBehaviour
 
             item.GetComponent<Rigidbody>().useGravity = false;
             item.GetComponent<Rigidbody>().isKinematic = true;
-            item.transform.position = new Vector3(Autobot1.transform.position.x, Autobot1.transform.position.y + 0.1f, Autobot1.transform.position.z + 1.25f);
+            item.transform.position = new Vector3(Autobot1.transform.position.x, Autobot1.transform.position.y + 0.1f, Autobot1.transform.position.z + 2.7f);
+            isO = false;
 
             Shoot();           
             //item.transform.parent = tempParent.transform;
