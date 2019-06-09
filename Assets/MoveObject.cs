@@ -220,7 +220,7 @@ public class MoveObject : MonoBehaviour
             
         }
 
-        if (Math.Abs(item.transform.position.x - Autobot.transform.position.x) <=  1.6f && Math.Abs(item.transform.position.z - Autobot.transform.position.z) <= 3.0f)
+        if (Math.Abs(item.transform.position.x - Autobot.transform.position.x) <=  1.65f && Math.Abs(item.transform.position.z - Autobot.transform.position.z) <= 3.15f)
         {
             inRange = true;
         }
@@ -246,7 +246,7 @@ public class MoveObject : MonoBehaviour
             
         }
 
-        if (Math.Abs(item.transform.position.x - Autobot1.transform.position.x) <=  1.6f && Math.Abs(item.transform.position.z - Autobot1.transform.position.z) <= 3.0f)
+        if (Math.Abs(item.transform.position.x - Autobot1.transform.position.x) <=  1.65f && Math.Abs(item.transform.position.z - Autobot1.transform.position.z) <= 3.15f)
         {
             inRange1 = true;
         }
