@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Buttons.cs" />
+    <Compile Include="Assets\CarCam1.cs" />
     <Compile Include="Assets\CarCamera\CarCam.cs" />
     <Compile Include="Assets\ChooseModel.cs" />
     <Compile Include="Assets\ChooseModel2.cs" />

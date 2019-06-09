@@ -4,7 +4,7 @@ public class CarCam : MonoBehaviour
 {
     Transform rootNode;
     Transform carCam;
-    Transform car;
+    private GameObject Autobot;
     Rigidbody carPhysics;
 
     [Tooltip("If car speed is below this value, then the camera will default to looking forwards.")]
@@ -20,8 +20,27 @@ public class CarCam : MonoBehaviour
     {
         carCam = Camera.main.GetComponent<Transform>();
         rootNode = GetComponent<Transform>();
-        car = rootNode.parent.GetComponent<Transform>();
-        carPhysics = car.GetComponent<Rigidbody>();
+        //car = rootNode.parent.GetComponent<Transform>();
+        if (PlayerPrefs.GetInt("CharacterSelected2") == 0)
+        {
+            Autobot = GameObject.Find("/modelList2/SpaceShuttleGreen/AutobotGreen");
+        }
+
+        else if (PlayerPrefs.GetInt("CharacterSelected2") == 1)
+        {
+            Autobot = GameObject.Find("/modelList2/SpaceShuttleBlue/AutobotBlue");
+        }
+
+        else if (PlayerPrefs.GetInt("CharacterSelected2") == 2)
+        {
+            Autobot = GameObject.Find("/modelList2/SpaceShuttleOrange/AutobotOrange");
+        }
+
+        else
+        {
+            Autobot = GameObject.Find("/modelList2/SpaceShuttleRed/AutobotRed");
+        }
+        carPhysics = Autobot.GetComponent<Rigidbody>();
     }
 
     void Start()
@@ -35,13 +54,13 @@ public class CarCam : MonoBehaviour
         Quaternion look;
 
         // Moves the camera to match the car's position.
-        rootNode.position = Vector3.Lerp(rootNode.position, car.position, cameraStickiness * Time.fixedDeltaTime);
+        rootNode.position = Vector3.Lerp(rootNode.position, Autobot.transform.position, cameraStickiness * Time.fixedDeltaTime);
 
         // If the car isn't moving, default to looking forwards. Prevents camera from freaking out with a zero velocity getting put into a Quaternion.LookRotation
         if (carPhysics.velocity.magnitude < rotationThreshold)
-            look = Quaternion.LookRotation(car.forward);
+            look = Quaternion.LookRotation(Autobot.transform.forward);
         else
-            look = Quaternion.LookRotation(car.forward);
+            look = Quaternion.LookRotation(Autobot.transform.forward);
         
         // Rotate the camera towards the velocity vector.
         look = Quaternion.Slerp(rootNode.rotation, look, cameraRotationSpeed * Time.fixedDeltaTime);                

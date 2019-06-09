@@ -10,8 +10,8 @@ public class MoveObject : MonoBehaviour
 
     public Rigidbody item;
     public GameObject tempParent;
-    public GameObject Autobot;
-    public GameObject Autobot1;
+    private GameObject Autobot;
+    private GameObject Autobot1;
     public float moveSpeed;
     public bool isO;
     public bool isSpace;
@@ -26,9 +26,10 @@ public class MoveObject : MonoBehaviour
     public AudioSource GoalSource;
     public AudioClip ShotClip;
     public AudioSource ShotSource;
-    
+
 
     // Start is called before the first frame update
+
 
     void OnTriggerEnter(Collider other)
     {
@@ -146,6 +147,44 @@ public class MoveObject : MonoBehaviour
         GoalSource.clip = GoalClip;
         ShotSource.clip = ShotClip;
         gameOver.SetActive(false);
+        
+        if(PlayerPrefs.GetInt("CharacterSelected2") == 0)
+        {
+            Autobot = GameObject.Find("/modelList2/SpaceShuttleGreen/AutobotGreen");
+        }
+
+        else if (PlayerPrefs.GetInt("CharacterSelected2") == 1)
+        {
+            Autobot = GameObject.Find("/modelList2/SpaceShuttleBlue/AutobotBlue");
+        }
+
+        else if (PlayerPrefs.GetInt("CharacterSelected2") == 2)
+        {
+            Autobot = GameObject.Find("/modelList2/SpaceShuttleOrange/AutobotOrange");
+        }
+
+        else
+        {
+            Autobot = GameObject.Find("/modelList2/SpaceShuttleRed/AutobotRed");
+        }
+
+
+        if (PlayerPrefs.GetInt("CharacterSelected") == 0)
+        {
+            Autobot1 = GameObject.Find("/modelList/SpaceShuttleGreen/AutobotGreen1");
+        }
+        else if (PlayerPrefs.GetInt("CharacterSelected") == 1)
+        {
+            Autobot1 = GameObject.Find("/modelList/SpaceShuttleBlue/AutobotBlue1");
+        }
+        else if (PlayerPrefs.GetInt("CharacterSelected") == 2)
+        {
+            Autobot1 = GameObject.Find("/modelList/SpaceShuttleOrange/AutobotOrange1");
+        }
+        else
+        {
+            Autobot1 = GameObject.Find("/modelList/SpaceShuttleRed/AutobotRed1");
+        }
         
     }
 

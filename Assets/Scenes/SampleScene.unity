@@ -563,7 +563,7 @@ GameObject:
   - component: {fileID: 245415799}
   - component: {fileID: 245415800}
   m_Layer: 0
-  m_Name: Autobot
+  m_Name: AutobotGreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -802,7 +802,7 @@ GameObject:
   - component: {fileID: 331414514}
   - component: {fileID: 331414513}
   m_Layer: 0
-  m_Name: Autobot
+  m_Name: AutobotBlue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1706,6 +1706,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 796715065}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &822746672 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 114076, guid: 1a9dca02feba5a740a65aa80ccaa457e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1201971152}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &822746673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822746672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f929600bf278b5a4699a01699001785d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationThreshold: 1
+  cameraStickiness: 10
+  cameraRotationSpeed: 5
 --- !u!4 &831029325 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000013285487154, guid: 3123da49cb81147489b444f2749aba47,
@@ -2608,8 +2629,33 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11472860, guid: 1a9dca02feba5a740a65aa80ccaa457e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a9dca02feba5a740a65aa80ccaa457e, type: 3}
+--- !u!1 &1042931248 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 114076, guid: 1a9dca02feba5a740a65aa80ccaa457e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1042931247}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1042931249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042931248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f929600bf278b5a4699a01699001785d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationThreshold: 1
+  cameraStickiness: 10
+  cameraRotationSpeed: 5
 --- !u!4 &1083627016 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 406594, guid: 1a9dca02feba5a740a65aa80ccaa457e,
@@ -3052,6 +3098,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11472860, guid: 1a9dca02feba5a740a65aa80ccaa457e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a9dca02feba5a740a65aa80ccaa457e, type: 3}
 --- !u!4 &1201971153 stripped
@@ -3069,7 +3119,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 114076, guid: 1a9dca02feba5a740a65aa80ccaa457e, type: 3}
       propertyPath: m_Name
-      value: CamParent
+      value: CamParentBlue
       objectReference: {fileID: 0}
     - target: {fileID: 406594, guid: 1a9dca02feba5a740a65aa80ccaa457e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3622,6 +3672,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1477385278 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 114076, guid: 1a9dca02feba5a740a65aa80ccaa457e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1821593842}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1477385279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1477385278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f929600bf278b5a4699a01699001785d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationThreshold: 1
+  cameraStickiness: 10
+  cameraRotationSpeed: 5
 --- !u!1 &1489109335
 GameObject:
   m_ObjectHideFlags: 0
@@ -3818,7 +3889,7 @@ GameObject:
   - component: {fileID: 1517850829}
   - component: {fileID: 1517850828}
   m_Layer: 0
-  m_Name: Autobot
+  m_Name: AutobotRed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4046,6 +4117,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &1534176541 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 114076, guid: 1a9dca02feba5a740a65aa80ccaa457e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1784174410}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1534176542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534176541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f929600bf278b5a4699a01699001785d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationThreshold: 1
+  cameraStickiness: 10
+  cameraRotationSpeed: 5
 --- !u!1 &1565845498 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1758042193773056, guid: cf7d4a26debf0214c94d229113d0c191,
@@ -4440,9 +4532,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 1667676134}
-  tempParent: {fileID: 245415792}
-  Autobot: {fileID: 245415792}
-  Autobot1: {fileID: 1728884359}
+  tempParent: {fileID: 331414511}
   moveSpeed: 50
   isO: 0
   isSpace: 0
@@ -4589,7 +4679,7 @@ GameObject:
   - component: {fileID: 1728884366}
   - component: {fileID: 1728884367}
   m_Layer: 0
-  m_Name: Autobot (1)
+  m_Name: AutobotGreen1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5123,6 +5213,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11472860, guid: 1a9dca02feba5a740a65aa80ccaa457e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a9dca02feba5a740a65aa80ccaa457e, type: 3}
 --- !u!4 &1784174411 stripped
@@ -5250,6 +5344,10 @@ PrefabInstance:
       propertyPath: m_NormalizedViewPortRect.x
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 11472860, guid: 1a9dca02feba5a740a65aa80ccaa457e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a9dca02feba5a740a65aa80ccaa457e, type: 3}
 --- !u!1 &1812252822
@@ -5269,7 +5367,7 @@ GameObject:
   - component: {fileID: 1812252825}
   - component: {fileID: 1812252824}
   m_Layer: 0
-  m_Name: Autobot (1)
+  m_Name: AutobotRed1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5613,6 +5711,10 @@ PrefabInstance:
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8113986, guid: 1a9dca02feba5a740a65aa80ccaa457e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11472860, guid: 1a9dca02feba5a740a65aa80ccaa457e, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -6324,7 +6426,7 @@ GameObject:
   - component: {fileID: 1938168713}
   - component: {fileID: 1938168712}
   m_Layer: 0
-  m_Name: Autobot (1)
+  m_Name: AutobotOrange1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6478,7 +6580,7 @@ GameObject:
   - component: {fileID: 1942999629}
   - component: {fileID: 1942999628}
   m_Layer: 0
-  m_Name: Autobot
+  m_Name: AutobotOrange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6752,7 +6854,7 @@ GameObject:
   - component: {fileID: 2025983761}
   - component: {fileID: 2025983760}
   m_Layer: 0
-  m_Name: Autobot (1)
+  m_Name: AutobotBlue1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
