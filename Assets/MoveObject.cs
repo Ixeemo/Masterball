@@ -85,18 +85,18 @@ public class MoveObject : MonoBehaviour
         gameOver.SetActive(true);
         if (counter > counter1)
         {
-            winner.text = "Player 1";
+            winner.text = "Player Right";
         }
         else
         {
-            winner.text = "Player 2";
+            winner.text = "Player Left";
         }
                 
     }
 
     void SetCountText()
     {
-        countText.text = "Wynik " + PlayerPrefs.GetInt("High Score").ToString() + ":" + PlayerPrefs.GetInt("High Score 1").ToString();
+        countText.text = "Wynik " + PlayerPrefs.GetInt("High Score 1").ToString() + ":" + PlayerPrefs.GetInt("High Score").ToString();
     }
 
     
